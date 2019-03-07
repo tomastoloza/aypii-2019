@@ -1,6 +1,6 @@
 package guide8;
 
-public class Recursive {
+public class Palindrome {
 
     /*Escribir un método recursivo que tome una palabra y diga si es un palíndromo
     (Palabra o expresión que es igual si se lee de izquierda a derecha que de derecha a

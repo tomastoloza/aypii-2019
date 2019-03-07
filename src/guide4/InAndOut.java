@@ -1,6 +1,7 @@
 package guide4;
 
 import java.io.*;
+import java.nio.charset.Charset;
 
 public class InAndOut {
     BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
@@ -41,7 +42,8 @@ public class InAndOut {
     public static void main(String[] args) {
         InAndOut inAndOut = new InAndOut();
 //        System.out.println(inAndOut.countLetters());
-        System.out.println(inAndOut.countWords("INFO", new File("src\\guide4\\count-words.txt")));
+//        System.out.println(inAndOut.countWords("INFO", new File("src\\guide4\\count-words.txt")));
+//        System.out.println(byte[] content = "test text".getBytes(Charset.forName("UTF-8")));
     }
 
 }

@@ -1,9 +1,10 @@
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 
 public class Remisse {
 
 
-    private static ArrayList<String> trips = new ArrayList<>();
+    private ArrayList<String> trips = new ArrayList<>();
 
     public ArrayList<String> list(){
         return this.trips;
@@ -27,10 +28,10 @@ public class Remisse {
 
     public static void main(String[] args) {
 
-        Remisse remis = new Remisse();
-        remis.addDelivery("1GV34", 220, "Siempre viva 213", 5);
-        remis.addTrip("1GV34", 432, "Siempre viva 213");
-        System.out.println("remis.list() = " + remis.list());
+//        Remisse remis = new Remisse();
+//        remis.addDelivery("1GV34", 220, "Siempre viva 213", 5);
+//        remis.addTrip("1GV34", 432, "Siempre viva 213");
+//        System.out.println("remis.list() = " + remis.list());
 
     }
 
