@@ -1,0 +1,7 @@
+Se desea pasar un archivo de texto a formato oración, es decir que cada palabra después de un
+signo de puntuación comience en mayúscula y luego todos los demás caracteres estén en
+minúscula. Escriba un programa que resuelva este problema. Se debe pedir el nombre del archivo
+de texto y controlar las excepciones que puedan producirse: por ejemplo, que no exista el archivo
+(si esto sucede, se debe añadir un bucle para volver a solicitar el nombre correcto del archivo).
+Notas: para convertir a mayúscula: String toUpperCase(), para convertir a minúscula: String
+toLowerCase().
