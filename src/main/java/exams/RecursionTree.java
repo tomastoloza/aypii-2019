@@ -15,9 +15,10 @@ public class RecursionTree {
         tree.add(13);
         tree.add(12);
         tree.add(4);
-        tree.add(5);
+        tree.add(6);
         tree.add(10);
-        System.out.println(getQuantityOfNodesAboveTen(tree.root));
+//        System.out.println(getQuantityOfNodesAboveTen(tree.root));
+        System.out.println(getMultiplosDeSeis(tree.root));
     }
 
     static int size(BinaryTree.Node tree) {
@@ -38,5 +39,20 @@ public class RecursionTree {
         if (tree.value >= 10)
             count++;
         return count + getQuantityOfNodesAboveTen(tree.left) + getQuantityOfNodesAboveTen(tree.right);
+    }
+
+    /**
+     * Dado un árbol binario de enteros, escribir un método recursivo que calcule (y devuelva) la suma de todas los nodos cuyo valor es
+     * múltiplo de 6. Por ejemplo, en el árbol de la figura debe devolver 6 + 12 (=18)
+     */
+    static double getMultiplosDeSeis(BinaryTree.Node tree) {
+        int sum = 0;
+        if (tree == null) {
+            return 0;
+        }
+        if (tree.value % 6 == 0) {
+            sum = tree.value;
+        }
+        return sum + getMultiplosDeSeis(tree.left) + getMultiplosDeSeis(tree.right);
     }
 }

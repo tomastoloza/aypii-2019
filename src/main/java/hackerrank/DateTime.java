@@ -6,7 +6,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-class Result {
+class DateTime {
 
     /*
      * Complete the 'findDay' function below.
@@ -20,8 +20,8 @@ class Result {
 
     public static void findDay(int month, int day, int year) {
         Calendar calendar = Calendar.getInstance();
-        calendar.set(year,month-1,day);
-        String[] days = {"SUNDAY","MONDAY", "TUESDAY","WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"};
+        calendar.set(year, month - 1, day);
+        String[] days = {"SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"};
         System.out.println(days[calendar.getTime().getDay()]);
     }
 
